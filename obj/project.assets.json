@@ -789,6 +789,15 @@
           }
         }
       },
+      "NetCoreAudio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/NetCoreAudio.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/NetCoreAudio.dll": {}
+        }
+      },
       "ReactiveUI/18.3.1": {
         "type": "package",
         "dependencies": {
@@ -2505,6 +2514,21 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "NetCoreAudio/2.0.0": {
+      "sha512": "uDZcOG1pHcfxoKr9LrYvh+zHf+3JlL3tWly+o4mICHm5s9INBzcJVWiO2hh17RPyZQ0Fvqiw4qsa396l77JM0Q==",
+      "type": "package",
+      "path": "netcoreaudio/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.jpg",
+        "lib/netstandard2.1/NetCoreAudio.dll",
+        "netcoreaudio.2.0.0.nupkg.sha512",
+        "netcoreaudio.nuspec"
       ]
     },
     "ReactiveUI/18.3.1": {
@@ -4696,7 +4720,8 @@
       "Avalonia.Diagnostics >= 11.0.6",
       "Avalonia.Fonts.Inter >= 11.0.6",
       "Avalonia.ReactiveUI >= 11.0.6",
-      "Avalonia.Themes.Fluent >= 11.0.6"
+      "Avalonia.Themes.Fluent >= 11.0.6",
+      "NetCoreAudio >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -4759,6 +4784,10 @@
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.0.6, )"
+          },
+          "NetCoreAudio": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

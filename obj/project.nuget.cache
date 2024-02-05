@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fFP17Wzt7jrJTVw47yCB86BQXAmuFSTk9d2Tr1QvCf8yOlTEliK6vpnUB2W3P7iqw0PZQqr24qCGeKH6S+mWUg==",
+  "dgSpecHash": "WTWtG2tWot1cQlUvebBuCmRPxAEp/nM+UoPacw7Bn4NcKVj7GeoIWFsv727F1JKrqAE/+JMdniNYH3ExDo+GLA==",
   "success": true,
   "projectFilePath": "/home/kingabreel/Documents/projetcs/Jala/Programming III/Labs/Lab-IV/Lab-IV.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "/home/kingabreel/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "/home/kingabreel/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/home/kingabreel/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "/home/kingabreel/.nuget/packages/netcoreaudio/2.0.0/netcoreaudio.2.0.0.nupkg.sha512",
     "/home/kingabreel/.nuget/packages/reactiveui/18.3.1/reactiveui.18.3.1.nupkg.sha512",
     "/home/kingabreel/.nuget/packages/skiasharp/2.88.6/skiasharp.2.88.6.nupkg.sha512",
     "/home/kingabreel/.nuget/packages/skiasharp.nativeassets.linux/2.88.6/skiasharp.nativeassets.linux.2.88.6.nupkg.sha512",
