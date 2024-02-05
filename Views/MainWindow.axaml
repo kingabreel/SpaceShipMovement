@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="400" 
+        Height="400" 
         x:Class="Lab_IV.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
@@ -16,7 +18,10 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <Canvas x:Name="Foguetinho">
+    <Canvas x:Name="GameScreen">
     
+        <Canvas x:Name="Foguetinho">
+    
+        </Canvas>
     </Canvas>
 </Window>
