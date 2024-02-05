@@ -7,7 +7,8 @@
         x:Class="Lab_IV.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Lab_IV">
+        Title="Lab_IV"
+        Background="Black">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,6 +16,7 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    <Canvas x:Name="Foguetinho">
+    
+    </Canvas>
 </Window>
