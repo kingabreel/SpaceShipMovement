@@ -22,31 +22,28 @@ public partial class MainWindow : Window
 
     private void CreatePlayer()
     {
-        PlayerImage = new Image {
-            Source = new Bitmap("./Assets/Frames/player.png"),
-            Width = 120,
-            Height = 120,
-        };
+
+        PlayerShip player = new PlayerShip(175, 175, "./Assets/Frames/player.png");
 
         Canvas screen = this.FindControl<Canvas>("Foguetinho");
 
-        screen.Children.Add(PlayerImage);
+        screen.Children.Add(player.PlayerImage);
 
-        Canvas.SetLeft(PlayerImage, 175);
-        Canvas.SetTop(PlayerImage, 175);
+        Canvas.SetLeft(player.PlayerImage, player.PlayerLeft);
+        Canvas.SetTop(player.PlayerImage, player.PlayerTop);
 
         mainViewlModel = new MainWindowViewModel();
 
-        mainViewlModel.SetImage(PlayerImage);
+        mainViewlModel.SetImage(player.PlayerImage);
         KeyDown += mainViewlModel.MainWindow_KeyDown;
         KeyUp += mainViewlModel.MainWindow_KeyUp;
         var timer = new DispatcherTimer();
         timer.Interval = TimeSpan.FromMilliseconds(100); 
         timer.Tick += (sender, e) => {
             mainViewlModel.MovePlayer(); 
-            Canvas.SetLeft(PlayerImage,mainViewlModel.PlayerLeft); 
-            Canvas.SetTop(PlayerImage, mainViewlModel.PlayerTop); 
-            PlayerImage.RenderTransform = new RotateTransform(mainViewlModel.RotationAngle); 
+            Canvas.SetLeft(player.PlayerImage,mainViewlModel.PlayerLeft); 
+            Canvas.SetTop(player.PlayerImage, mainViewlModel.PlayerTop); 
+            player.PlayerImage.RenderTransform = new RotateTransform(mainViewlModel.RotationAngle); 
         };
         timer.Start();
     }
